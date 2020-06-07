@@ -9,8 +9,12 @@ $senha = $_POST['senha'];
 //mysql_connect("Nome ou IP do servidor", "Usuario", "Senha");
 //include ("conecta.php");
 
-$conexao = mysqli_connect("localhost","myke1","","REA") or die ('Não foi possível conectar');
+$dbname='heroku_f1ac2596f1753e7';
+$usuario='bc2145f4b3765f';
+$password='b3acd899';
+$localhost='us-cdbr-east-05.cleardb.net';
 
+$conexao = mysqli_connect($localhost,$usuario,$password,$dbname) or die ('Não foi possível conectar');
 //caso a conexão seja estabelecida corretamente seleciona o banco de dados a ser usado
 
 if($conexao)
