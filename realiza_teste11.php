@@ -192,7 +192,7 @@ if($erros == 0)
       }
 
   $tipos = 'REFLEXIVO';
-  $conexao = mysqli_connect("localhost","myke1","","REA") or die ('Não foi possível conectar');
+  $conexao = mysqli_connect("us-cdbr-east-05.cleardb.net","bc2145f4b3765f","b3acd899","heroku_f1ac2596f1753e7") or die ('Não foi possível conectar');
   $sql_1 = "INSERT INTO `questoes`(`um`, `dois`, `tres`, `quatro`, `cinco`, `seis`, `sete`, `oito`, `nove`, `dez`, `onze`, `doze`, `treze`, `catorze`, `quinze`, `dezesseis`, `dezessete`, `dezoito`, `login`)
   VALUES('$um','$dois', '$tres', '$quatro', '$cinco','$seis','$sete','$oito','$nove','$dez','$onze','$doze','$treze','$catorze','$quinze','$dezesseis', '$dezessete', '$dezoito', $id)";
   $sql_2 = "UPDATE `usuario` set `avaliado` = 1, `tipo` = '$tipos' where login ='$login' ";
