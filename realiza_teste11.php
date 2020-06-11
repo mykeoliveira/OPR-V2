@@ -170,12 +170,12 @@ if($onze == '') {
   
 if($erros == 0)
    {
-   $array_tip['CONVERGENTE'] = $um + $tres + $sete;
-   $array_tip['DIVERGENTE'] = $doze + $quinze + $dezoito;
-   $array_tip['HOLISTA'] = $nove + $dez + $catorze;
-   $array_tip['SERIALISTA'] = $seis + $oito + $dezessete;
-   $array_tip['IMPULSIVO'] = $dois + $cinco + $onze;
-   $array_tip['REFLEXIVO'] = $quatro + $treze + $dezesseis;
+   $array_tip['DIVERGENTE'] = $um + $tres + $sete;
+   $array_tip['CONVERGENTE'] = $doze + $quinze + $dezoito;
+   $array_tip['SERIALISTA'] = $nove + $dez + $catorze;
+   $array_tip['HOLISTA'] = $seis + $oito + $dezessete;
+   $array_tip['REFLEXIVO'] = $dois + $cinco + $onze;
+   $array_tip['IMPULSIVO'] = $quatro + $treze + $dezesseis;
   
 
 
@@ -191,7 +191,6 @@ if($erros == 0)
           }
       }
 
-  $tipos = 'REFLEXIVO';
   $conexao = mysqli_connect("us-cdbr-east-05.cleardb.net","bc2145f4b3765f","b3acd899","heroku_f1ac2596f1753e7") or die ('Não foi possível conectar');
   $sql_1 = "INSERT INTO `questoes`(`um`, `dois`, `tres`, `quatro`, `cinco`, `seis`, `sete`, `oito`, `nove`, `dez`, `onze`, `doze`, `treze`, `catorze`, `quinze`, `dezesseis`, `dezessete`, `dezoito`, `login`)
   VALUES('$um','$dois', '$tres', '$quatro', '$cinco','$seis','$sete','$oito','$nove','$dez','$onze','$doze','$treze','$catorze','$quinze','$dezesseis', '$dezessete', '$dezoito', $id)";
