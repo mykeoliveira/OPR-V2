@@ -103,8 +103,8 @@
 		                </tr>
 		
 		                <tr  class="ver01">
-		                <td>Senha:</td>
-		                <td><input name = "senha" size="20" type="password"  id="senha1" />
+		                <td>Senha:<br> Máximo 10 dígitos</td>
+		                <td><input name = "senha" size="20" type="password" maxlength="10" id="senha1" />
                         </td>
                         </tr>
         
@@ -113,7 +113,7 @@
 			                Confirme a senha:
 		                </td>
 		                <td>
-			                <input name = "senha2" size="20" type="password"  />
+			                <input name = "senha2" size="20" type="password" maxlength="10" />
 		                </td>
 		                </tr>
 	
