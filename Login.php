@@ -53,7 +53,7 @@
      				 </tr>
                                 <tr>
                                 <td>Senha:</td>
-                                <td><input type="password" name="senha" size="15" maxlength="8" /></td>
+                                <td><input type="password" name="senha" size="15" maxlength="20" /></td>
                                 </tr>
   
                                 <tr>
